@@ -1,5 +1,3 @@
 # VCE-Resources.github.io
-Free VCE resources
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+
+Free github resources 
