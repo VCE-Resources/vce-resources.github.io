@@ -1,3 +1,3 @@
 # VCE-Resources.github.io
 
-Free github resources 
+Free vce resources on github
