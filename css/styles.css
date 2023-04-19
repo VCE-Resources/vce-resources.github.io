@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: Merriweather, serif;
+}
+
+#side-navbar {
+  background: #3377FF;
+  width: 200px;
+  height: 100vh;
+  font-size: 130%;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+.side-navbar-a, .drop-button {
+  display: block;
+  padding: 10px 8px;
+  border: none;
+  color: white;
+  background: inherit;
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#dropdown-container {
+    background: #33A2FF;
+    padding-left: 8px;
+}
+
+#dropdown-container a{
+  color: white;
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+i {
+  float: right;
+  margin-right: 8px;
+}
+
+.main {
+  margin-left: 250px;
+  float: left;
+}
+
