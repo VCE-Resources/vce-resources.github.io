@@ -3,6 +3,59 @@ html, body {
     height: 100%;
   }
   
+  html {
+    position: relative;
+    border-radius: 100%;
+    transform: scale(0.125) translateY(-250%) translateX(450%);
+    animation: anim 1s cubic-bezier(0,0,.3,1) 1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  
+  @keyframes anim {
+    0% {
+      border-radius: 100%;
+      transform: scale(0.5) translateY(-450%) translateX(0%);
+    }
+    
+    30% {
+      transform: scale(0.5) translateY(calc(-350% + 100vh)) translateX(0%);
+    }
+    
+    60% {
+      transform: scale(0.5) translateY(-250%) translateX(0%);
+    }
+    
+    100% {
+      overflow: auto;
+      border-radius: 0%;
+      transform: scale(1) translateY(0%) translateX(0%);
+    }
+  }
+  
+  html::before {
+    content: "";
+    position: absolute;
+    z-index: 10000;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: #92a8d1;
+    pointer-events: none;
+    animation: anim2 1s cubic-bezier(0,0,.3,1) 2s 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes anim2 {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
   body {
     margin: 0;
     padding: 0;
