@@ -17,7 +17,7 @@ html, body {
     position: fixed;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to bottom, #ADD8E6 0%, #0000FF 100%);
+    background: linear-gradient(to bottom, #92a8d1 0%, #034f84 100%);
     z-index: -1;
   }
   
@@ -39,13 +39,13 @@ html, body {
     width: 300px;
     height: 100%;
     padding: 50px 0px 50px 30px;
-    background: linear-gradient(to bottom, #ADD8E6 0%, #0000FF 100%); 
+    background: linear-gradient(to bottom,#92a8d1 0%, #034f84 100%); 
     color: #F5F4F4;
     box-sizing: border-box;
   }
   
   a {
-    color: #0000FF;
+    color: #034f84;
   }
   
   .sidebar a {
