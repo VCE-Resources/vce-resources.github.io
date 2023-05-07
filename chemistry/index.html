@@ -33,10 +33,129 @@
         <p>Home Of Free VCE Chemistry Resources</p>
         <p>Current and Past Topics:</p>
         <ul>
-          <li>Equilibrium</li>
-          <li>Galvanic Cells</li>
-          <li>Fuels</li>
-          <li>Redox</li>
+            <style>
+                #equilibriumDropdown {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease-out;
+                }
+              
+                #equilibriumDropdown.show {
+                  max-height: 200px; /* set maximum height */
+                  overflow-y: auto; /* enable vertical scrolling */
+                  transition: max-height 0.3s ease-in;
+                }
+              </style>
+              
+              <li>
+                <span onclick="toggleEquilibrium()">Equilibrium &#10132;</span>
+                <div id="equilibriumDropdown">
+                  <p>Equilibrium is a state in which a system is balanced and unchanging. In chemistry, equilibrium refers to a state in which the forward and reverse reactions of a chemical reaction are occurring at the same rate, resulting in no net change in the concentration of the reactants or products. The point at which this occurs is called the equilibrium point, and can be described by the equilibrium constant.</p>
+                  <p>Equilibrium is an important concept in chemistry, as it allows us to understand the behavior of chemical reactions and predict their outcomes. For example, the Haber process, which is used to produce ammonia for fertilizers and other industrial applications, is based on the principle of chemical equilibrium.</p>
+                  <p>Equilibrium can be influenced by a number of factors, including temperature, pressure, and the concentration of reactants and products. Understanding how these factors affect equilibrium is key to controlling chemical reactions and achieving desired outcomes.</p>
+                </div>
+              </li>
+              
+              <script>
+                function toggleEquilibrium() {
+                  var dropdown = document.getElementById("equilibriumDropdown");
+                  dropdown.classList.toggle("show");
+                }
+              </script>
+              
+              
+              <style>
+                #galvanicDropdown {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease-out;
+                }
+              
+                #galvanicDropdown.show {
+                  max-height: 200px; /* set maximum height */
+                  overflow-y: auto; /* enable vertical scrolling */
+                  transition: max-height 0.3s ease-in;
+                }
+              </style>
+              
+              <li>
+                <span onclick="toggleGalvanic()">Galvanic Cells &#10132;</span>
+                <div id="galvanicDropdown">
+                  <p>A galvanic cell, also known as a voltaic cell, is an electrochemical cell that converts chemical energy into electrical energy. This is accomplished through a redox reaction, where one substance is oxidized and another is reduced, producing a flow of electrons between two electrodes. The electrodes are typically made of different metals or metal ions, and the electrolyte is a solution of ions that facilitates the transfer of electrons between the electrodes.</p>
+                  <p>Galvanic cells are commonly used in batteries, where they provide a source of electrical energy that can be used to power devices such as flashlights, calculators, and watches. They are also used in electroplating, where a metal is deposited onto a surface by passing a current through a solution of ions.</p>
+                  <p>Galvanic cells are an important area of study in electrochemistry, and have applications in a wide range of fields, including materials science, biochemistry, and environmental science.</p>
+                </div>
+              </li>
+              
+              <script>
+                function toggleGalvanic() {
+                  var dropdown = document.getElementById("galvanicDropdown");
+                  dropdown.classList.toggle("show");
+                }
+              </script>
+              
+              
+              <style>
+                #fuelsDropdown {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease-out;
+                }
+              
+                #fuelsDropdown.show {
+                  max-height: 200px; /* set maximum height */
+                  overflow-y: auto; /* enable vertical scrolling */
+                  transition: max-height 0.3s ease-in;
+                }
+              </style>
+              
+              <li>
+                <span onclick="toggleFuels()">Fuels &#10132;</span>
+                <div id="fuelsDropdown">
+                  <p>A fuel is a substance that can be burned or otherwise used to produce energy. Examples of fuels include gasoline, diesel, natural gas, propane, and coal. When a fuel is burned, its chemical energy is released in the form of heat and light, which can be harnessed to power engines, turbines, and other devices.</p>
+                  <p>Fuels can be either renewable or non-renewable. Renewable fuels, such as ethanol and biodiesel, are derived from organic matter and can be replenished over time. Non-renewable fuels, such as fossil fuels, are finite and will eventually run out.</p>
+                  <p>The use of fuels has a significant impact on the environment, particularly in terms of air and water pollution and greenhouse gas emissions. As a result, there is a growing interest in developing alternative, cleaner sources of energy, such as solar, wind, and hydroelectric power.</p>
+                </div>
+              </li>
+              
+              <script>
+                function toggleFuels() {
+                  var dropdown = document.getElementById("fuelsDropdown");
+                  dropdown.classList.toggle("show");
+                }
+              </script>
+              
+              
+              <style>
+                #redoxDropdown {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease-out;
+                }
+              
+                #redoxDropdown.show {
+                  max-height: 200px; /* set maximum height */
+                  overflow-y: auto; /* enable vertical scrolling */
+                  transition: max-height 0.3s ease-in;
+                }
+              </style>
+              
+              <li>
+                <span onclick="toggleRedox()">Redox &#10132;</span>
+                <div id="redoxDropdown">
+                  <p>Redox (short for reduction-oxidation) refers to a type of chemical reaction where one reactant is oxidized (loses electrons) and another reactant is reduced (gains electrons). These reactions are important in many areas of chemistry, including electrochemistry, where they are used to generate electrical energy in batteries and fuel cells.</p>
+                  <p>Redox reactions can be either spontaneous (occur naturally) or non-spontaneous (require an input of energy). They are also involved in many biological processes, including cellular respiration and photosynthesis.</p>
+                  <p>Examples of redox reactions include the corrosion of metals, the combustion of fuels, and the bleaching of hair or fabric using hydrogen peroxide.</p>
+                </div>
+              </li>
+              
+              <script>
+                function toggleRedox() {
+                  var dropdown = document.getElementById("redoxDropdown");
+                  dropdown.classList.toggle("show");
+                }
+              </script>
+              
         </ul>
         <h2>Tips and Tricks</h2>
         <p>-COMING SOON- <a href="https://www.youtube.com/watch?v=kpwNjdEPz7E">Deal with it.</a></p>
