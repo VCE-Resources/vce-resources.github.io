@@ -551,6 +551,7 @@ opacity: 0;
 #testimonial {
 	background-color: #F5F5F5;
 	padding: 100px 0 100px 0;
+	color: #000000;
 }
 .quoteLoop {
 	height: auto;
@@ -562,7 +563,7 @@ opacity: 0;
 	margin: 10px 30px;
 	height: inherit;
 	top: 0px;
-	display: none;
+	/* display: none; */
 	text-align: center;
 }
 /* Contact Section
