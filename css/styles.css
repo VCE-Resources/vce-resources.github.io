@@ -11,6 +11,10 @@ body {
 	font-weight: 400;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #222;
+	margin: 0;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 /* Grid
 ********************************************************************* */  
