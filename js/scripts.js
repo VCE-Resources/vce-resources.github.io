@@ -47,7 +47,7 @@ $('.main_nav li a').click(function() {
 
 jQuery(document).ready(function($) {
 
- $('.smoothscroll').on('click',function (e) {
+ $('smooth-scroll').on('click',function (e) {
     e.preventDefault();
 
     var target = this.hash,
@@ -62,5 +62,39 @@ jQuery(document).ready(function($) {
 
 });
 
-
+const smoothScroll = function (target, duration) {
+    const targetSection = document.querySelector(target);
+    const targetPosition = targetSection.getBoundingClientRect().top;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+  
+    const animation = function (currentTime) {
+      if (startTime === null) {
+        startTime = currentTime;
+      }
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    };
+  
+    const ease = function (t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+  
+    requestAnimationFrame(animation);
+  };
+  
+  const smoothScrollLink = document.querySelector("#smooth-scroll-link");
+  smoothScrollLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    smoothScroll("#about", 1000);
+  });
+  
 TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
