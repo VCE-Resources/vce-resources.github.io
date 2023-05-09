@@ -207,7 +207,7 @@ p {
 ********************************************************************* */
 a {
 	text-decoration: none;
-	color: #ffffff;
+	color: #0b88ad;
 	font-weight: 600;
 }
 a:hover {
@@ -302,7 +302,7 @@ header {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	padding-bottom: 6px;
-	background-color: #034e8471;
+	background-color: #ffffff;
 }
 
 @media only screen and (max-width: 766px) {

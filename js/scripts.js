@@ -97,10 +97,9 @@ const smoothScroll = function (target, duration) {
     smoothScroll("#about", 1000);
   });
  
- 
-  const SmoothScroll = (id) => {
-    let element = document.getElementById(id);
-    element.scrollIntoView({ behavior: "smooth", block: "center" });
-    };
-  
 TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
+
+const SmoothScroll = (id) => {
+  let element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth", block: "center" });
+};
