@@ -454,6 +454,32 @@ transform:translate(0, 10px) rotate(45deg);
 opacity: 0;
 }
 }
+
+/*
+Info Box
+********************************************************************* 
+*/
+
+.info {
+	padding: 20px;
+	background-color: #001d61;
+	color: white;
+}
+  
+.closebtninfo {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+  
+.closebtninfo:hover {
+	color: black;
+}
 /* About Section
 ********************************************************************* */
 

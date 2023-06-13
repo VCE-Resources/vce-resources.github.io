@@ -1,0 +1,48 @@
+body {
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+}
+
+h1 {
+  color:  #92a8d1;
+  color: -moz-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	color: -webkit-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	color: linear-gradient(135deg,  #92a8d1 0%, #034f84 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #92a8d1', endColorstr='#034f84', GradientType=1 );
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background:  #92a8d1;
+	background: -moz-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	background: -webkit-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	background: linear-gradient(135deg,  #92a8d1 0%, #034f84 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #92a8d1', endColorstr='#034f84', GradientType=1 );
+  color: #ccc;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+}
+
+#progress-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+#progress-bar span {
+  display: block;
+  height: 20px;
+  background:  #92a8d1;
+	background: -moz-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	background: -webkit-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	background: linear-gradient(135deg,  #92a8d1 0%, #034f84 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #92a8d1', endColorstr='#034f84', GradientType=1 );
+  width: 0;
+  transition: width 1s;
+}
