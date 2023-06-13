@@ -25,7 +25,7 @@ var progressInterval = setInterval(function() {
     // Update the progress information if the seconds have changed
     var progressInfoElement = document.getElementById("progress-info");
     if (progressInfoElement.innerHTML = "Seconds: " + elapsedSeconds + " (Remaining: " + remainingSeconds + ")") {
-        progressInfoElement.innerHTML = "Seconds: " + elapsedSeconds + " (Remaining: " + remainingSeconds + ")" + " (" + "Progress: " + progressPercentage.toFixed(6) + "%" + ") ";
+        progressInfoElement.innerHTML = "Seconds: " + elapsedSeconds + " (Remaining: " + remainingSeconds + ")" + " (" + "Progress: " + progressPercentage.toFixed(10) + "%" + ") ";
     }
 
     // Check if the target time has been reached
@@ -67,7 +67,7 @@ var progressInterval_12 = setInterval(function() {
     // Update the progress information if the seconds have changed
     var progressInfoElement_12 = document.getElementById("progress-info_12");
     if (progressInfoElement_12.innerHTML !== "Seconds: " + elapsedSeconds_12 + " (Remaining: " + remainingSeconds_12 + ")") {
-        progressInfoElement_12.innerHTML = "Seconds: " + elapsedSeconds_12 + " (Remaining: " + remainingSeconds_12 + ")" + " (" + "Progress: " + progressPercentage_12.toFixed(6) + "%" + ") ";
+        progressInfoElement_12.innerHTML = "Seconds: " + elapsedSeconds_12 + " (Remaining: " + remainingSeconds_12 + ")" + " (" + "Progress: " + progressPercentage_12.toFixed(10) + "%" + ") ";
         
     }
 
