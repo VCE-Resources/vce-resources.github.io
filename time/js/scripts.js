@@ -77,3 +77,30 @@ var progressInterval_12 = setInterval(function() {
         progressInfoElement_12.innerHTML = "Progress complete! 100%";
     }
 }, 1000);
+
+window.addEventListener('DOMContentLoaded', calculateRemainingTime);
+
+        function calculateRemainingTime() {
+            var endDate = new Date('November 15, 2023 17:15:00');
+            var now = new Date();
+
+            var diff = endDate.getTime() - now.getTime();
+            var seconds = Math.floor(diff / 1000);
+            var minutes = Math.floor(seconds / 60);
+            var hours = Math.floor(minutes / 60);
+            var days = Math.floor(hours / 24);
+            var months = Math.floor(days / 30);
+
+            seconds %= 60;
+            minutes %= 60;
+            hours %= 24;
+            days %= 30;
+
+            document.getElementById('months').textContent = months;
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+
+            setTimeout(calculateRemainingTime, 1000); // Update every second
+        }
