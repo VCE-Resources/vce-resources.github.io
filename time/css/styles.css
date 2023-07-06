@@ -1,10 +1,39 @@
 body {
   font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
-  color: #404040;
+  color: #ffffff;
+  /* background:  #92a8d1;  Old browsers */ 
+	/*background: -moz-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	background: -webkit-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
+	background: linear-gradient(135deg,  #92a8d1 0%, #034f84 100%); */
+  background-color: #07255d;
+  background-image: url("https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80");
+
 }
 
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.glassbox {
+  box-sizing: border-box;
+  padding: 75px 50px;
+  width: 100%;
+  max-width: 800px;
+  background: rgba(163, 163, 163, 0.337);
+  box-shadow: 0px 10px 50px 0 rgba(255, 255, 255, 0.265);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  
+}
+
+
 h1 {
-  color:  #92a8d1;
+  color:  #ffffff;
   color: -moz-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
 	color: -webkit-linear-gradient(-45deg,  #92a8d1 0%, #034f84 100%);
 	color: linear-gradient(135deg,  #92a8d1 0%, #034f84 100%);
@@ -33,6 +62,7 @@ button {
   width: 100%;
   background-color: #f1f1f1;
   border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 #progress-bar span {
@@ -45,4 +75,5 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' #92a8d1', endColorstr='#034f84', GradientType=1 );
   width: 0;
   transition: width 1s;
+  border-radius: 10px;
 }
